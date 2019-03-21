@@ -1,0 +1,162 @@
+<!doctype html>
+<html>
+	<head>
+        <meta charsest="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+        <title>HTML5 테이블 시간표</title>
+        <style>
+            table {
+                position: relative;
+                top: 10px;
+            }
+
+            table, th, td {
+                border: 2px solid gray;
+                border-collapse: collapse;
+            }
+
+            th, td {
+                width: 40px;
+                height: 60px;
+                padding: 0;
+                text-align: center;
+            }
+
+            tbody > tr > td:not(:first-child) {
+                color: white;
+                font-size: 1.1em;
+            }
+
+            tbody > tr > td:first-child {
+                font-size: 1.1em;
+                font-weight: bold;
+                width: 10%;
+            }
+
+            th {
+                font-size: 1.2em;
+                height: 40px;
+                color: #4a4c51;
+                font-weight: bolder;
+            }
+
+            table {
+                width: 100%;
+            }
+
+            div#container {
+                position: fixed;
+                overflow: scroll;
+                width: 50%;
+                left: 25%;
+                height: 100%;
+                padding: 0;
+                margin: 0;
+            }
+
+            div#caption {
+                font-weight: bolder;
+                font-size: 2em;
+                text-align: center;
+            }
+
+            @media (max-width: 1200px) {
+                div#container {
+                    width: 95%;
+                    left: 2.5%;
+                }
+
+                th, td {
+                    height: 40px;
+                }
+
+                tbody > tr > td:first-child {
+                    width: 30%;
+                }
+            }
+
+        </style>
+    </head>
+    <body>
+        <div id="container">
+            <div id="caption">
+                2학년 1학기 시간표
+            </div>
+            <table>
+                <thead>
+                    <tr>
+                        <th></th>
+                        <th>월</th>
+                        <th>화</th>
+                        <th>수</th>
+                        <th>목</th>
+                        <th>금</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>9시-10시</td>
+                        <td></td>
+                        <td></td>
+                        <td rowspan="2" style="background-color: blueviolet">자료구조</td>
+                        <td></td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <td>10시-11시</td>
+                        <td></td>
+                        <td></td>
+                        <td rowspan="2" style="background-color: darkcyan">인터넷프로그래밍</td>
+                        <td style="background-color: rgb(38, 159, 240)">디지털논리회로</td>
+                    </tr>
+                    <tr>
+                        <td>11시-12시</td>
+                        <td></td>
+                        <td rowspan="2" style="background-color: blueviolet">자료구조</td>
+                        <td rowspan="2" style="background-color: rgb(38, 159, 240)">디지털논리회로</td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <td>12시-1시</td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <td>1시-2시</td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td rowspan="2" style="background-color: orangered">영어회화2</td>
+                    </tr>
+                    <tr>
+                        <td>2시-3시</td>
+                        <td></td>
+                        <td rowspan="4" style="background-color: magenta">C++</td>
+                        <td></td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <td>3시-4시</td>
+                        <td rowspan="3" style="background-color: rgb(140, 233, 0)">나노화학</td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <td>4시-5시</td>
+                        <td rowspan="2" style="background-color: darkcyan">인터넷프로그래밍</td>
+                        <td></td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <td>5시-6시</td>
+                        <td></td>
+                        <td></td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </body>
+</html>
