@@ -1,0 +1,47 @@
+<!doctype html>
+<html>
+	<head>
+		<meta charsest="utf-8" />
+		<title></title>
+    </head>
+    <style>
+        .hidden {
+            display: none;
+        }
+        div span {
+            font-size: 2em;
+            font-weight: bold;
+        }
+    </style>
+    <script>
+        window.onload = function() {
+            //get params
+            var usp =  new URLSearchParams(window.location.search);
+            var countryName = usp.get('con');
+            var capitalName = usp.get('cap');
+            //error handling
+            if(!countryName || !capitalName) {
+                document.querySelector('div#data').setAttribute('class', 'hidden');
+                document.querySelector('div#error').setAttribute('class', '');
+                document.querySelector('title').innerHTML = '오류';
+                return;
+            }
+            //set data
+            document.querySelector('title').innerHTML = '국가정보 - ' + countryName;
+            document.querySelector('span#con').innerHTML = countryName;
+            document.querySelector('span#cap').innerHTML = capitalName;
+        }
+    </script>
+	<body>
+        <div id="data">
+            <span>국가명: </span>
+            <span id="con"></span>
+            <br />
+            <span>수도명: </span>
+            <span id="cap"></span>
+        </div>
+        <div id="error" class="hidden">
+            <p>오류가 발생하였습니다.</p>
+        </div>
+	</body>
+</html>
