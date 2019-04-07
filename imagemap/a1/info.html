@@ -1,0 +1,98 @@
+<!doctype html>
+<html>
+	<head>
+		<meta charsest="utf-8" />
+        <title></title>
+        <style>
+            .hidden {
+                display: none;
+            }
+            a#name {
+                display: block;
+                font-size: 1.3em;
+                font-weight: bold;
+                margin-bottom: 5px;
+            }
+            div img {
+                width: 600px;
+            }
+            div#placeholder {
+                background-color: lightgray;
+                width: 600px;
+                height: 400px;
+                font-size: 1.5em;
+            }
+        </style>
+        <script>
+            window.onload = function() {
+                //get params
+                var usp =  new URLSearchParams(window.location.search);
+                var id = usp.get('id');
+                getName(id, function() {
+                    handleError();
+                }, function(name) {
+                    //error handling
+                    if(!id || !name) {
+                        handleError();
+                        return;
+                    }
+                    //set title
+                    document.querySelector('title').innerHTML = '건물정보 - ' + name;
+                    //set image name
+                    document.querySelector('a#name').innerHTML = name;
+                    //load image
+                    loadImage(id);
+                })
+            };
+            function handleError() {
+                document.querySelector('div#data').setAttribute('class', 'hidden');
+                document.querySelector('div#error').setAttribute('class', '');
+                document.querySelector('title').innerHTML = '오류';
+            }
+            function getName(id, err, callback) {
+                var xhr = new XMLHttpRequest();
+                xhr.open('GET', './data/data.json');
+                xhr.onreadystatechange = function() {
+                    if(xhr.readyState == 4 && xhr.status == 200) {
+                        var json = JSON.parse(this.responseText);
+                        for(var i = 0;i < json.length;i++) {
+                            if(json[i].id == id) {
+                                callback(json[i].name);
+                                return;
+                            }
+                        }
+                        err();
+                    }
+                    if(xhr.readyState == 4 && xhr.status != 200) {
+                        err();
+                    }
+                };
+                xhr.send();
+            }
+            function loadImage(imgNum) {
+                var imgURL = './data/'+imgNum+'.png';
+                var img = new Image();
+                img.src = imgURL;
+                img.onload = function() {
+                    document.querySelector('div#placeholder').setAttribute('class', 'hidden');
+                    document.querySelector('div#imageholder').appendChild(img);
+                };
+                img.onerror = function() {
+                    document.querySelector('div#placeholder').innerHTML = '이미지를 로드할 수 없습니다';
+                }
+            }
+        </script>
+    </head>
+	<body>
+        <div id="error" class="hidden">
+            오류가 발생했습니다.
+        </div>
+        <div id="data">
+            <a id="name"></a>
+            <div id="placeholder">
+                로딩중...
+            </div>
+            <div id="imageholder"></div>
+        </div>
+	</body>
+</html>

@@ -1,0 +1,58 @@
+<!doctype html>
+<html>
+	<head>
+		<meta charsest="utf-8" />
+		<title>대전대학교 캠퍼스맵</title>
+    </head>
+    <style>
+        body {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            width: 100%;
+            height: 100vh;
+        }
+        .hidden {
+            display: none;
+        }
+    </style>
+    <script>
+        window.onload = function() {
+            getData(function() {
+                alert('오류가 발생했습니다.');
+            }, function(json) {
+                for(var i = 0;i<json.length;i++) {
+                    addArea(json[i].name, './info.html?id=' + (i+1), json[i].coords);
+                }
+                document.querySelector('img#map').setAttribute('class', '');
+            });
+        };
+        function addArea(alt, href, coords) {
+            var element = document.createElement('area');
+            element.setAttribute('alt', alt);
+            element.setAttribute('href', href);
+            element.setAttribute('coords', coords);
+            element.setAttribute('shape', 'poly');
+            document.querySelector('map').appendChild(element);
+        }
+        function getData(err, callback) {
+            var xhr = new XMLHttpRequest();
+            xhr.open('GET', './data/data.json');
+            xhr.onreadystatechange = function() {
+                if(xhr.readyState == 4 && xhr.status == 200) {
+                    var json = JSON.parse(this.responseText);
+                    callback(json);
+                }
+                if(xhr.readyState == 4 && xhr.status != 200) {
+                    err();
+                }
+            };
+            xhr.send();
+        }
+    </script>
+	<body>
+        <img id="map" class="hidden" src="./tour_map05.png" usemap="#univmap">
+        <map name="univmap">
+        </map>
+	</body>
+</html>
