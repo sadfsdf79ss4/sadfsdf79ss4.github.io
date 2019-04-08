@@ -17,7 +17,6 @@
 })(window);
 
 //querystring encoder [href] attribute
-//save onload handler
 var load = function() {
     var target = document.querySelectorAll('[href]');
     for(var i = 0;i < target.length;i++) {
