@@ -15,7 +15,7 @@
     </style>
     <script src="../../ie11-polyfill.js"></script>
     <script>
-        window.onload = function() {
+        var load = function() {
             //get params
             var usp =  new URLSearchParams(window.location.search);
             var countryName = usp.get('con');
@@ -31,7 +31,8 @@
             document.querySelector('title').innerHTML = '국가정보 - ' + countryName;
             document.querySelector('span#con').innerHTML = countryName;
             document.querySelector('span#cap').innerHTML = capitalName;
-        }
+        };
+        addEventListener('load', load);
     </script>
 	<body>
         <div id="data">

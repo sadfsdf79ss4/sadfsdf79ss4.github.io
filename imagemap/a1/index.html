@@ -18,7 +18,7 @@
     </style>
     <script src="../../ie11-polyfill.js"></script>
     <script>
-        window.onload = function() {
+        var load = function() {
             getData(function() {
                 alert('오류가 발생했습니다.');
             }, function(json) {
@@ -28,6 +28,7 @@
                 document.querySelector('img#map').setAttribute('class', '');
             });
         };
+        addEventListener('load', load);
         function addArea(alt, href, coords) {
             var element = document.createElement('area');
             element.setAttribute('alt', alt);

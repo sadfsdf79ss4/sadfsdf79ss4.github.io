@@ -26,7 +26,7 @@
         </style>
         <script src="../../ie11-polyfill.js"></script>
         <script>
-            window.onload = function() {
+            var load = function() {
                 //get params
                 var usp =  new URLSearchParams(window.location.search);
                 var id = usp.get('id');
@@ -46,6 +46,7 @@
                     loadImage(id);
                 })
             };
+            addEventListener('load', load);
             function handleError() {
                 document.querySelector('div#data').setAttribute('class', 'hidden');
                 document.querySelector('div#error').setAttribute('class', '');

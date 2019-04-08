@@ -19,7 +19,7 @@
 //querystring encoder [href] attribute
 //save onload handler
 var windowOnLoad = window.onload;
-window.onload = function() {
+var load = function() {
     //if saved onload handler exists, execute it.
     windowOnLoad && windowOnLoad();
     var target = document.querySelectorAll('[href]');
@@ -29,3 +29,4 @@ window.onload = function() {
         target[i].setAttribute('href', url);
     }
 }
+addEventListener('load', load);
