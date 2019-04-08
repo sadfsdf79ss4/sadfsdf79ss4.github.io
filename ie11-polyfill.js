@@ -18,10 +18,7 @@
 
 //querystring encoder [href] attribute
 //save onload handler
-var windowOnLoad = window.onload;
 var load = function() {
-    //if saved onload handler exists, execute it.
-    windowOnLoad && windowOnLoad();
     var target = document.querySelectorAll('[href]');
     for(var i = 0;i < target.length;i++) {
         var url = target[i].getAttribute('href');
