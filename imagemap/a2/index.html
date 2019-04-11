@@ -5,6 +5,14 @@
 		<meta charsest="utf-8" />
 		<title>세계지도</title>
     </head>
+    <script src="../../ie11-polyfill.js"></script>
+    <script src="../imagemap-transform.js"></script>
+    <script>
+        var load = function() {
+            ImagemapTransform(document.querySelector('img'));
+        };
+        addEventListener('load', load);
+    </script>
     <style>
         body {
             display: flex;
@@ -13,8 +21,11 @@
             width: 100%;
             height: 100vh;
         }
+        img {
+            width: 80%;
+            height: auto;
+        }
     </style>
-    <script src="../../ie11-polyfill.js"></script>
 	<body>
         <img src="./dvd-28890_1280.png" usemap="#worldmap">
         <map name="worldmap">

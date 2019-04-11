@@ -18,6 +18,7 @@
         }
     </style>
     <script src="../../ie11-polyfill.js"></script>
+    <script src="../imagemap-transform.js"></script>
     <script>
         var load = function() {
             getData(function() {
@@ -27,6 +28,8 @@
                     addArea(json[i].name, './info.html?id=' + (i+1), json[i].coords);
                 }
                 document.querySelector('img#map').setAttribute('class', '');
+                ImagemapTransform(document.querySelector('img#map'));
+                encodeAllHref();
             });
         };
         addEventListener('load', load);
