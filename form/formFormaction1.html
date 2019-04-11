@@ -1,0 +1,24 @@
+<!doctype html>
+<html>
+	<head>
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+		<meta charsest="utf-8" />
+		<title>폼 학습</title>
+    </head>
+	<body>
+        <section>
+            <form action="https://jsptogo.herokuapp.com/jspsrc/formFormaction1.jsp" method="post">
+                <fieldset>
+                    <legend>최단 시간 찾기</legend>
+                    <label for="fromx">출발:</label>
+                    <input id="fromx" type="text" name="fromx" placeholder="출발"/>
+                    <label for="tox">도착:</label>
+                    <input id="tox" type="text" name="tox" placeholder="도착"/>
+                    <input type="submit" value="자동차"/>
+                    <input type="submit" value="대중교통" formaction="https://jsptogo.herokuapp.com/jspsrc/formPublic1.jsp"/>
+                    <input type="submit" value="자전거" formaction="https://jsptogo.herokuapp.com/jspsrc/formBike1.jsp"/>
+                </fieldset>
+            </form>
+        </section>
+	</body>
+</html>

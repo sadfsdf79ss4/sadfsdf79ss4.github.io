@@ -1,0 +1,23 @@
+<!doctype html>
+<html>
+	<head>
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+		<meta charsest="utf-8" />
+		<title>폼 학습</title>
+    </head>
+	<body>
+        <section>
+            <form action="https://jsptogo.herokuapp.com/jspsrc/formDateTime1.jsp" method="post">
+                <fieldset>
+                    <legend>약속 시간 날짜 입력</legend>
+                    <label for="datex">날짜:</label>
+                    <input id="datex" type="date" name="datex"/>
+                    <label for="timex">시간:</label>
+                    <input id="timex" type="times" name="timex"/>
+                    <button type="submit">입력</button>
+                    <input type="reset" name="reset1" value="취소"/>
+                </fieldset>
+            </form>
+        </section>
+	</body>
+</html>

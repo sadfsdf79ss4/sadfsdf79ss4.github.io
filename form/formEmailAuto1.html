@@ -1,0 +1,23 @@
+<!doctype html>
+<html>
+	<head>
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+		<meta charsest="utf-8" />
+		<title>폼 학습</title>
+    </head>
+	<body>
+        <section>
+            <form action="https://jsptogo.herokuapp.com/jspsrc/formEmailAuto1.jsp" method="post">
+                <fieldset>
+                    <legend>이름 입력</legend>
+                    <label for="namex">이름:</label>
+                    <input id="namex" type="text" name="namex" placeholder="이름"/>
+                    <label for="emailx">이메일:</label>
+                    <input id="emailx" type="email" name="emailx" autocomplete="off"/>
+                    <button type="submit">조회</button>
+                    <input type="reset" name="reset1" value="취소"/>
+                </fieldset>
+            </form>
+        </section>
+	</body>
+</html>
