@@ -1,19 +1,19 @@
 {
 	"languages": {
-		"0": {
-		category: "객체지향",
-		list: [[0, "Java"], [1, "C++"]]
+	  "0": {
+		"category": "객체지향",
+		"list": [[0, "Java"], [1, "C++"]]
 	  },
 	  "1": {
-		category: "절차지향",
-		list: [[2, "Javadf"], [3, "C++df"]]
+		"category": "절차지향",
+		"list": [[2, "Javadf"], [3, "C++df"]]
 	  }
 	},
 	"metadata": [
 		{
-			id: 0,
-			description: "자바는 ㄹㅇㄴㄹㄴㅁㅇㄹㄴㅁㅇㄹ",
-			link: "https://www.java.com"
+			"id": 0,
+			"description": "자바는 ㄹㅇㄴㄹㄴㅁㅇㄹㄴㅁㅇㄹ",
+			"link": "https://www.java.com"
 		}
 	]
 }
