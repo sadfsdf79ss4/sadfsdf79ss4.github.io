@@ -1,2 +1,0 @@
-#selectlang-container{display:flex}#selectlang-title{display:flex;justify-content:space-between}#selectlang-title>#reset{font-weighft:bold;cursor:pointer;border-radius:100%;border-width:0;width:1.5em;height:1.5em;background-color:grey;display:flex;justify-content:center}#selectlang-title>#reset>span{-webkit-transform:translateY(-.08em);transform:translateY(-.08em)}div#custom-container{width:70%;position:fixed;left:15%}@media screen and (max-width:650px){div#custom-container{left:0;width:100%}}
-/*# sourceMappingURL=main.7ac86d90.chunk.css.map */
