@@ -623,5 +623,66 @@
             ]
          }
       ]
+   },
+   "10":{
+      "description" : "레이아웃",
+      "list":[
+         {  
+            "name":"cssDisp1",
+            "href":"/cssLayout/cssDisp1.html",
+            "tags":[  
+               "CSS레이아웃",
+               "실습"
+            ]
+         },
+         {
+            "name":"cssVis1",
+            "href":"/cssLayout/cssVis1.html",
+            "tags":[  
+               "CSS레이아웃",
+               "실습"
+            ]
+         },
+         {  
+            "name":"cssDisplayInlineBlock1",
+            "href":"/cssLayout/cssDisplayInlineBlock1.html",
+            "tags":[  
+               "CSS레이아웃",
+               "실습"
+            ]
+         },
+         {  
+            "name":"cssStatic1",
+            "href":"/cssLayout/cssStatic1.html",
+            "tags":[  
+               "CSS레이아웃",
+               "실습"
+            ]
+         },
+         {  
+            "name":"cssRelative1",
+            "href":"/cssLayout/cssRelative1.html",
+            "tags":[  
+               "CSS레이아웃",
+               "실습"
+            ]
+         },
+         {  
+            "name":"cssFixed1",
+            "href":"/cssLayout/cssFixed1.html",
+            "tags":[  
+               "CSS레이아웃",
+               "실습"
+            ]
+         },
+         {  
+            "name":"cssAbsolute1",
+            "href":"/cssLayout/cssAbsolute1.html",
+            "tags":[  
+               "CSS레이아웃",
+               "실습"
+            ]
+         }
+      ]
    }
  }
