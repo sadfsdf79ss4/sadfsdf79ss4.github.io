@@ -533,7 +533,7 @@
      ]
    },
    "9":{
-      "description" : "선택자, 텍스트, 폰트",
+      "description" : "선택자, 텍스트, 폰트, 박스모델",
       "list":[
          {  
             "name":"selectortag",
@@ -619,6 +619,78 @@
             "href":"/cssFont/cssFont1.html",
             "tags":[  
                "CSS폰트",
+               "실습"
+            ]
+         },
+         {  
+            "name":"cssmargin1",
+            "href":"/cssBoxModel/cssmargin1.html",
+            "tags":[  
+               "CSS박스모델",
+               "실습"
+            ]
+         },
+         {  
+            "name":"csspadding1",
+            "href":"/cssBoxModel/csspadding1.html",
+            "tags":[  
+               "CSS박스모델",
+               "실습"
+            ]
+         },
+         {  
+            "name":"cssBg1",
+            "href":"/cssBoxModel/cssBg1.html",
+            "tags":[  
+               "CSS박스모델",
+               "실습"
+            ]
+         },
+         {  
+            "name":"cssBorder1",
+            "href":"/cssBoxModel/cssBorder1.html",
+            "tags":[  
+               "CSS박스모델",
+               "실습"
+            ]
+         },
+         {  
+            "name":"cssBox1",
+            "href":"/cssBoxModel/cssBox1.html",
+            "tags":[  
+               "CSS박스모델",
+               "실습"
+            ]
+         },
+         {  
+            "name":"cssBox2",
+            "href":"/cssBoxModel/cssBox2.html",
+            "tags":[  
+               "CSS박스모델",
+               "실습"
+            ]
+         },
+         {  
+            "name":"cssBox3",
+            "href":"/cssBoxModel/cssBox3.html",
+            "tags":[  
+               "CSS박스모델",
+               "실습"
+            ]
+         },
+         {  
+            "name":"cssBox4",
+            "href":"/cssBoxModel/cssBox4.html",
+            "tags":[  
+               "CSS박스모델",
+               "실습"
+            ]
+         },
+         {  
+            "name":"cssWidthHeight",
+            "href":"/cssBoxModel/cssWidthHeight.html",
+            "tags":[  
+               "CSS박스모델",
                "실습"
             ]
          }
