@@ -59,7 +59,7 @@ header {
 }
 
 .aboutMe {
-    position: relatve;
+    position: relative;
     /*fix margin collapse*/
     display: flex;
     flex-direction: column;

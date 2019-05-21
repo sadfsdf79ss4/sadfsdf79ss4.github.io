@@ -116,3 +116,11 @@ function scrollToBottom() {
 function getScrollPosition(targetElement) {
     return rootElement.scrollTop + targetElement.getBoundingClientRect().y;
 }
+
+//웹호스팅 홍보내용 삭제
+function deleteAds() {
+    let ad = document.querySelector('body > div');
+    ad.remove();
+}
+
+deleteAds();

@@ -78,6 +78,15 @@
         align-items: flex-start;
     }
 
+    .contactitem > i {
+        font-size: 2em;
+        margin-right: 0.2em;
+    }
+    
+    .contactitem > span {
+        font-size: 1.6em;
+    }
+
     .lastEdit {
         display: none;
     }
@@ -97,4 +106,9 @@
     ul.eduList > li > dl > dd:first-line {
         line-height: 100% !important;
     }
+    .infoData dl > dt,
+    dd {
+        font-size: 1.6em;
+    }
+    
 }
