@@ -758,7 +758,7 @@
       ]
    },
    "11":{
-      "description" : "레이아웃",
+      "description" : "레이아웃 및 리스트 스타일링",
       "list":[
          {  
             "name":"cssOverflow1",
@@ -789,6 +789,22 @@
             "href":"/cssLayout/cssClear1.html",
             "tags":[  
                "CSS레이아웃",
+               "실습"
+            ]
+         },
+         {  
+            "name":"cssList1",
+            "href":"/cssList/cssList1.html",
+            "tags":[  
+               "CSS리스트",
+               "실습"
+            ]
+         },
+         {  
+            "name":"cssList2",
+            "href":"/cssList/cssList2.html",
+            "tags":[  
+               "CSS리스트",
                "실습"
             ]
          }
