@@ -1,0 +1,282 @@
+<!DOCTYPE html>
+<html lang="ko">
+    <head>
+        <meta charsest="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+        <title>우하선 포토폴리오</title>
+        <link rel="stylesheet" href="./css/normalize.css" />
+        <link
+            rel="stylesheet"
+            href="https://use.fontawesome.com/releases/v5.8.2/css/all.css"
+            integrity="sha384-oS3vJWv+0UjzBfQzYUhtDYW+Pj2yciDJxpsK1OYPAYjqT085Qq/1cq5FLXAZQ7Ay"
+            crossorigin="anonymous"
+        />
+        <link rel="stylesheet" href="./css/semantic.css" />
+        <link rel="stylesheet" href="./css/index.css" />
+        <link rel="stylesheet" href="./css/mobile.css" />
+    </head>
+    <body>
+        <nav class="scroll-navbar">
+            <ul>
+                <li onclick="animateScroll('header')"><em>HOME</em></li>
+                <li onclick="animateScroll('.aboutMe')"><em>ABOUT ME</em></li>
+                <li onclick="animateScroll('.webproject')"><em>WEBAPP</em></li>
+                <li onclick="animateScroll('.javaProject')"><em>JAVA</em></li>
+                <li onclick="scrollToBottom()"><em>CONTACT</em></li>
+            </ul>
+        </nav>
+        <header>
+            <div class="screen">
+                <div class="title">
+                    <h1>우하선</h1>
+                    <h2>포토폴리오</h2>
+                </div>
+            </div>
+            <div onclick="animateScroll('.aboutMe')" class="scrollDown">
+                <span>SCROLL DOWN</span>
+                <i class="fas fa-angle-double-down"></i>
+            </div>
+        </header>
+        <main>
+            <section class="aboutMe">
+                <h1>
+                    <span>About Me</span>
+                </h1>
+                <div class="basicInfo">
+                    <div class="infoData">
+                        <i class="fas fa-user-alt"></i>
+                        <dl>
+                            <dd>NAME</dd>
+                            <dt>우하선</dt>
+                        </dl>
+                    </div>
+                    <div class="infoData">
+                        <i class="fas fa-birthday-cake"></i>
+                        <dl>
+                            <dd>B-DAY</dd>
+                            <dt>1999.12.29</dt>
+                        </dl>
+                    </div>
+                    <div class="infoData">
+                        <i class="far fa-envelope"></i>
+                        <dl>
+                            <dd>E-MAIL</dd>
+                            <dt>hasun@hasundev.com</dt>
+                        </dl>
+                    </div>
+                    <div class="infoData">
+                        <i class="fas fa-mobile-alt"></i>
+                        <dl>
+                            <dd>MOBILE</dd>
+                            <dt>010 3XXX XXX2</dt>
+                        </dl>
+                    </div>
+                </div>
+                <h1>
+                    <span>Academic</span>
+                </h1>
+                <div class="acadamic">
+                    <div class="edu">
+                        <div class="infoData" id="acadamic-infoData">
+                            <i class="fas fa-graduation-cap"></i>
+                            <dl>
+                                <dd style="margin-bottom: 0">EDUCATION</dd>
+                            </dl>
+                        </div>
+                        <ul class="eduList">
+                            <li>
+                                <dl>
+                                    <dd>20XX</dd>
+                                    <dt>호주 유학</dt>
+                                </dl>
+                            </li>
+                            <li>
+                                <dl>
+                                    <dd>20XX</dd>
+                                    <dt>대전대학교 컴퓨터공학과 졸업</dt>
+                                </dl>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="skill">
+                        <div class="infoData" id="acadamic-infoData">
+                            <i class="fas fa-code"></i>
+                            <dl>
+                                <dd style="margin-bottom: 0">SKILLS</dd>
+                            </dl>
+                        </div>
+                        <ul class="eduList">
+                            <li>
+                                <dl>
+                                    <dd>Javascript / ES8</dd>
+                                    <dt>
+                                        <span class="pill">VanliaJS</span>
+                                        <span class="pill">React</span>
+                                        <span class="pill">JQuery</span>
+                                        <span class="pill">NodeJS</span>
+                                    </dt>
+                                </dl>
+                            </li>
+                            <li>
+                                <dl>
+                                    <dd>HTML5 / CSS</dd>
+                                    <dt>
+                                        <span class="pill">HTML5</span>
+                                        <span class="pill">CSS</span>
+                                        <span class="pill">Responsive</span>
+                                        <span class="pill">Bootstrap</span>
+                                    </dt>
+                                </dl>
+                            </li>
+                            <li>
+                                <dl>
+                                    <dd>Java 8+</dd>
+                                    <dt>
+                                        <span class="pill">Swing</span>
+                                        <span class="pill">Socket</span>
+                                        <span class="pill">Web Crawling</span>
+                                    </dt>
+                                </dl>
+                            </li>
+                            <li>
+                                <dl>
+                                    <dd>English</dd>
+                                    <dt>
+                                        <span class="pill">StackOverflow</span>
+                                        <span class="pill"
+                                            >Technical Document</span
+                                        >
+                                        <span class="pill">Specfication</span>
+                                    </dt>
+                                </dl>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </section>
+            <section class="webproject">
+                <h1>
+                    <span>모던 자바스크립트를 활용한</span>
+                    <span>웹 애플리케이션</span>
+                </h1>
+                <div class="webapp">
+                    <img src="./imgs/practicelist.png" alt="" />
+                    <section>
+                        <div>
+                            <h1>수업 실습목록 리뉴얼</h1>
+                            <p>
+                                2학년 1학기 수업인 인터넷 프로그래밍의 실습 목록
+                                사이트를 리뉴얼했습니다. ES8과 React
+                                라이브러리를 사용하여 제작하였습니다. Bootstrap
+                                라이브러리를 적극 활용하여 디자인 하였습니다.
+                            </p>
+                        </div>
+                        <div>
+                            <button
+                                class="ui primary button"
+                                onclick="go('https\://sadfsdf79ss4.github.io/');"
+                            >
+                                페이지 보기
+                            </button>
+                            <button
+                                class="ui primary button"
+                                onclick="go('https\://codesandbox.io/s/l4nz2lwpo7');"
+                            >
+                                소스코드 보기
+                            </button>
+                        </div>
+                    </section>
+                </div>
+                <div class="webapp">
+                    <img src="./imgs/dstree.png" alt="" />
+                    <section>
+                        <div>
+                            <h1>트리 순회 시각화</h1>
+                            <p>
+                                2학년 1학기 수업인 자료구조 및 알고리즘 수업에서
+                                다뤄진 트리의 순회 및 전위/중위/후위 수식을
+                                시각화했습니다. ES8과 D3 라이브러리를 사용하여
+                                제작하였습니다.
+                            </p>
+                        </div>
+                        <div>
+                            <button
+                                class="ui primary button"
+                                onclick="go('https\://r033lp32o.codesandbox.io/');"
+                            >
+                                페이지 보기
+                            </button>
+                            <button
+                                class="ui primary button"
+                                onclick="go('https\://codesandbox.io/s/r033lp32o');"
+                            >
+                                소스코드 보기
+                            </button>
+                        </div>
+                    </section>
+                </div>
+            </section>
+            <section class="javaProject">
+                <h1>
+                    <span>자바 GUI 애플리케이션</span>
+                </h1>
+                <div class="webapp">
+                    <img src="./imgs/selectstudent.png" alt="" />
+                    <section>
+                        <div>
+                            <h1>학생 뽑기 프로그램</h1>
+                            <p>
+                                선생님이 학생뽑기 프로그램을 사용할 때 기존에
+                                사용하던 프로그램의 불편한 점을 보완하여
+                                만들었습니다. 일반인도 쉽게 접근할수 있는 텍스트
+                                파일을 이용해 학생정보를 수정할 수 있습니다.
+                            </p>
+                        </div>
+                        <div>
+                            <button class="ui primary button">
+                                JAR 다운로드
+                            </button>
+                            <button class="ui primary button">
+                                소스코드 보기
+                            </button>
+                        </div>
+                    </section>
+                </div>
+            </section>
+        </main>
+        <footer>
+            <div class="footer-screen">
+                <section class="contact-wrap">
+                    <div class="contact">
+                        <div class="contactitem">
+                            <i class="fas fa-envelope"></i>
+                            <span>hasun@hasundev.com</span>
+                        </div>
+                    </div>
+                    <div class="contact">
+                        <div class="contactitem">
+                            <i class="fas fa-phone"></i>
+                            <span>010-3XXX-XXX2</span>
+                        </div>
+                    </div>
+                </section>
+            </div>
+            <div class="footer-navbar">
+                <ul class="links">
+                    <li onclick="go('https\://github.com/hasunwoo');">
+                        <i class="fab fa-github"></i>
+                    </li>
+                    <li
+                        class="codesansbox-icon"
+                        onclick="go('https\://codesandbox.io/u/hasunwoo');"
+                    >
+                        <img src="./imgs/code-sandbox.svg" />
+                    </li>
+                </ul>
+                <p class="lastEdit">Last Edited on 2019 May 18</p>
+                <p class="copyright">&copy;2019 hasundev.com</p>
+            </div>
+        </footer>
+    </body>
+    <script src="./js/index.js"></script>
+</html>
