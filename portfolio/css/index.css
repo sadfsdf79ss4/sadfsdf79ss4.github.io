@@ -1,9 +1,10 @@
-@import url(http://fonts.googleapis.com/earlyaccess/nanumgothic.css);
-@import url(https://cdn.jsdelivr.net/gh/hiun/NanumSquare@master/nanumsquare.css);
-@import url(http://fonts.googleapis.com/earlyaccess/nanumpenscript.css);
+@import url(../fonts/nanumgothic/nanumgothic.css);
+@import url(../fonts/nanumsquare/nanumsquare.css);
+@import url(../fonts/nanumpenscript/nanumpenscript.css);
 
 header {
     position: relative;
+    display: flex;
     width: 100%;
     height: 100vh;
     background-color: skyblue;
@@ -27,11 +28,15 @@ header {
 .title > h1 {
     color: white;
     font-size: 5em;
+    font-family: "Nanum Square";
+    font-weight: bold;
 }
 
 .title > h2 {
     color: white;
     font-size: 2em;
+    font-family: "Nanum Square";
+    font-weight: normal;
 }
 
 .scrollDown {
@@ -114,7 +119,7 @@ dd {
 }
 
 .infoData dl > dd {
-    margin-bottom: 0.7em;
+    margin-bottom: 0.2em;
     font-family: "Nanum Gothic";
     font-weight: 900;
 }
@@ -253,6 +258,7 @@ ul.eduList > li > dl > dd {
 
 .webapp > section > div:first-of-type > h1 {
     margin-top: 0.5em;
+    margin-bottom: 0;
     font-size: 3em;
     display: inline-block;
     word-break: keep-all;
@@ -267,6 +273,7 @@ ul.eduList > li > dl > dd {
 .webapp > section > div:first-of-type > p {
     font-size: 2em;
     font-family: "Nanum Square";
+    line-height: 1.2em;
 }
 
 .webapp > section > div:last-of-type {
@@ -468,4 +475,44 @@ button {
     font-style: normal;
     color: black;
     position: absolute;
+}
+
+.button {
+    background-color: #2185D0;
+    color: #FFFFFF;
+    background-image: none;
+    cursor: pointer;
+    display: inline-block;
+    min-height: 1em;
+    outline: none;
+    border: none;
+    vertical-align: baseline;
+    margin: 0em 0.25em 0em 0em;
+    padding: 0.78571429em 1.5em 0.78571429em;
+    text-transform: none;
+    text-shadow: none;
+    font-weight: bold;
+    line-height: 1em;
+    font-style: normal;
+    text-align: center;
+    text-decoration: none;
+    border-radius: 0.28571429rem;
+    -webkit-box-shadow: 0px 0px 0px 1px transparent inset, 0px 0em 0px 0px rgba(34, 36, 38, 0.15) inset;
+    box-shadow: 0px 0px 0px 1px transparent inset, 0px 0em 0px 0px rgba(34, 36, 38, 0.15) inset;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    -webkit-transition: opacity 0.1s ease, background-color 0.1s ease, color 0.1s ease, background 0.1s ease, -webkit-box-shadow 0.1s ease;
+    transition: opacity 0.1s ease, background-color 0.1s ease, color 0.1s ease, background 0.1s ease, -webkit-box-shadow 0.1s ease;
+    transition: opacity 0.1s ease, background-color 0.1s ease, color 0.1s ease, box-shadow 0.1s ease, background 0.1s ease;
+    transition: opacity 0.1s ease, background-color 0.1s ease, color 0.1s ease, box-shadow 0.1s ease, background 0.1s ease, -webkit-box-shadow 0.1s ease;
+    will-change: '';
+    -webkit-tap-highlight-color: transparent;
+}
+
+.button:hover, .button:active {
+    background-color: #1678c2;
+    color: #FFFFFF;
+    text-shadow: none;
 }

@@ -1,0 +1,13 @@
+/* nanum-pen-script-regular - latin_korean */
+@font-face {
+    font-family: 'Nanum Pen Script';
+    font-style: normal;
+    font-weight: 400;
+    src: url('./nanum-pen-script-v14-latin_korean-regular.eot'); /* IE9 Compat Modes */
+    src: local('Nanum Pen'), local('NanumPen'),
+         url('./nanum-pen-script-v14-latin_korean-regular.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+         url('./nanum-pen-script-v14-latin_korean-regular.woff2') format('woff2'), /* Super Modern Browsers */
+         url('./nanum-pen-script-v14-latin_korean-regular.woff') format('woff'), /* Modern Browsers */
+         url('./nanum-pen-script-v14-latin_korean-regular.ttf') format('truetype'), /* Safari, Android, iOS */
+         url('./nanum-pen-script-v14-latin_korean-regular.svg#NanumPenScript') format('svg'); /* Legacy iOS */
+  }
