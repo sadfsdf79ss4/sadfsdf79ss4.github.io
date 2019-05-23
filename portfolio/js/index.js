@@ -127,7 +127,7 @@ function setScrollingElementProperty(p, d) {
     }
 }
 function getScrollTop() {
-    return getScrollisadfsdf79ss4ngElementProperty("scrollTop");
+    return getScrollingElementProperty("scrollTop");
 }
 
 function setScrollTop(d) {
