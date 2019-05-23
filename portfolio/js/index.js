@@ -112,16 +112,22 @@ function scrollToBottom() {
 }
 
 //안드로이드 웹뷰 등 기타의 브라우저에서 scrollTop 안되는 현상 수정
-const rootElement = document.querySelector("html");
 //https://stackoverflow.com/questions/871399/cross-browser-method-for-detecting-the-scrolltop-of-the-browser-window
 function getScrollingElementProperty(p) {
-    return rootElement[p] || document.body[p];
+    return "scrollingElement" in document
+        ? document.scrollingElement[p]
+        : document.documentElement[p];
 }
 function setScrollingElementProperty(p, d) {
-    rootElement[p] = document.body[p] = d;
+    if ("scrollingElement" in document) {
+        document.scrollingElement[p] = d;
+    } else {
+        //ie
+        document.documentElement[p] = d;
+    }
 }
 function getScrollTop() {
-    return getScrollingElementProperty("scrollTop");
+    return getScrollisadfsdf79ss4ngElementProperty("scrollTop");
 }
 
 function setScrollTop(d) {
