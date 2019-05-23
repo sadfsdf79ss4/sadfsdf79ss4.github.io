@@ -68,9 +68,11 @@ let scrollStart;
 const rootElement = document.querySelector("html");
 function animateScroll(
     target,
-    animationTime = 1500,
-    easingFunc = EasingFunctions.easeInOutCubic
+    animationTime,
+    easingFunc
 ) {
+    animationTime = animationTime || 1500;
+    easingFunc = easingFunc || EasingFunctions.easeInOutCubic;
     let targetPosition;
     if(typeof target !== 'number') {
         //target이 선택자라고 가정
@@ -114,6 +116,8 @@ function scrollToBottom() {
 }
 
 function getScrollPosition(targetElement) {
-    return rootElement.scrollTop + targetElement.getBoundingClientRect().y;
+    let bcr = targetElement.getBoundingClientRect();
+    let elemOffset = "y" in bcr ? bcr.y : bcr.top;
+    return rootElement.scrollTop + elemOffset;
 }
 
