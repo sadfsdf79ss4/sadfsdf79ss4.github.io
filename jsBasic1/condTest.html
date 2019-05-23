@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+
+<html>
+    <head>
+        <meta http-equiv="Content-type" content="text/html; charset=utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+        <link rel="stylesheet" href="./sample.css" />
+        <script
+            src="https://code.jquery.com/jquery-3.4.1.min.js"
+            integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo="
+            crossorigin="anonymous"
+        ></script>
+        <title>웹 프로그래밍 실습</title>
+    </head>
+    <body>
+        <header>
+            <h2>실습 대환영</h2>
+        </header>
+        <nav>
+            <ul>
+                <li><a href="http://hive.dju.ac.kr">실습서버</a></li>
+            </ul>
+        </nav>
+        <section>
+            <h4>조건/논리 연산자 예제 실습</h4>
+            <script>
+                var a = 10,
+                    b = 20,
+                    c = true;
+                document.write("a=", a, ",b=", b, ",c=", c, "<br/>");
+                document.write(
+                    "조건연산: a==b --->",
+                    a == b,
+                    ", a>b --->",
+                    a > b,
+                    "<br/>"
+                );
+                document.write(
+                    "조건연산: a\<b ---\>",
+                    a < b,
+                    ", \!c --->",
+                    !c,
+                    "<br/>"
+                );
+                document.write(
+                    "조건연산: a>=b --->",
+                    a >= b,
+                    ", a\<=b ---\>",
+                    a <= b,
+                    "<br/>"
+                );
+                document.write("조건연산: a!=b --->", a != b, "<br/>");
+                document.write(
+                    "논리연산: flag=(a>10)&&(b>10) --->",
+                    a > 10 && b > 10,
+                    "<br/>"
+                );
+                document.write(
+                    "논리연산: flag=(a>10)||(b>10) --->",
+                    a > 10 || b > 10,
+                    "<br/>"
+                );
+            </script>
+        </section>
+        <footer>
+            <p>&copy; 20XX Made by Korea. All rights reserved.</p>
+        </footer>
+    </body>
+</html>
