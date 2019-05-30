@@ -811,7 +811,7 @@
       ]
    },
    "12":{
-      "description" : "반응형 웹 디자인",
+      "description" : "반응형 웹 디자인, 자바스크립트 기본",
       "list":[
          {  
             "name":"rwd0",
@@ -937,6 +937,81 @@
             "href":"/jsBasic1/ifTest2.html",
             "tags":[  
                "JS조건문"
+            ]
+         },
+         {  
+            "name":"switchTest.html",
+            "href":"/jsBasic1/switchTest.html",
+            "tags":[  
+               "JS조건문"
+            ]
+         }
+      ]
+   },
+   "13":{
+      "description" : "자바스크립트 기본",
+      "list":[
+         {  
+            "name":"forTest",
+            "href":"/jsBasic2/forTest.html",
+            "tags":[  
+               "JS배열&반복문"
+            ]
+         },
+         {  
+            "name":"whileTest",
+            "href":"/jsBasic2/whileTest.html",
+            "tags":[  
+               "JS배열&반복문"
+            ]
+         },
+         {  
+            "name":"funcTest",
+            "href":"/jsBasic2/funcTest.html",
+            "tags":[  
+               "JS함수"
+            ]
+         },
+         {  
+            "name":"funcArgTest",
+            "href":"/jsBasic2/funcArgTest.html",
+            "tags":[  
+               "JS함수"
+            ]
+         },
+         {  
+            "name":"htmlDom",
+            "href":"/jsDom/htmlDom.html",
+            "tags":[  
+               "JS DOM"
+            ]
+         },
+         {  
+            "name":"getElementById",
+            "href":"/jsDom/getElementById.html",
+            "tags":[  
+               "JS DOM"
+            ]
+         },
+         {  
+            "name":"getElementsByName",
+            "href":"/jsDom/getElementsByName.html",
+            "tags":[  
+               "JS DOM"
+            ]
+         },
+         {  
+            "name":"getElementsByTagName",
+            "href":"/jsDom/getElementsByTagName.html",
+            "tags":[  
+               "JS DOM"
+            ]
+         },
+         {  
+            "name":"getSetAttribute",
+            "href":"/jsDom/getSetAttribute.html",
+            "tags":[  
+               "JS DOM"
             ]
          }
       ]

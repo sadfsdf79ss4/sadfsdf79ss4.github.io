@@ -1,0 +1,32 @@
+<!doctype html>
+<html>
+	<head>
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+		<meta charsest="utf-8" />
+        <title>웹 프로그래밍 실습</title>
+        <link rel="stylesheet" href="./sample.css">
+        <script src="http://code.jquery.com/jquery-1.11.1.min.js"></script>
+        <script src="./sample.js"></script>
+        <script>
+            function fnGetElementsById() {
+                var accessTag = document.getElementById("input_id1");
+                console.log(accessTag.tagName);
+                accessTag.setAttribute("value", "getElementById 실행!")
+            }
+        </script>
+    </head>
+	<body>
+        <header>
+            <h2>HTML DOM 실습을 환영합니다</h2>
+        </header>
+        <section id="login">
+            <h4>자바 스크립트 실행</h4>
+            <form id="form_id1" name="form_name1">
+                <input type="text" id="input_id1" name="input_name1">
+                <input type="button" id="button_id1" name="user_id" value="입력" onclick="fnGetElementsById();">
+                <br/>
+                빈칸에 검색어를 넣고 입력해 주세요.
+            </form>
+        </section>
+	</body>
+</html>
