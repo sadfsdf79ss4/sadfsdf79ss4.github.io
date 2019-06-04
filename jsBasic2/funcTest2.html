@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+        <script src="http://code.jquery.com/jquery-1.11.1.min..js"></script>
+        <link
+            rel="stylesheet"
+            href="./sample.css"
+        />
+        <script src="./sample.js"></script>
+        <title>웹 프로그래밍 실습</title>
+    </head>
+    <body>
+        <header><h2>실습대환영</h2></header>
+        <nav>
+            <ul>
+                <li>
+                    <a href="../index.html"
+                        >실습서버</a
+                    >
+                </li>
+            </ul>
+        </nav>
+        <section>
+            <h4>function 실습</h4>
+            <script>
+                function a(num1, num2) {
+                    var result = num1 + num2;
+                    return result;
+                }
+                function b(num1, num2) {
+                    var result = num1 - num2;
+                    return result;
+                }
+                function c(num1, num2) {
+                    var result = num1 * num2;
+                    return result;
+                }
+                function d(num1, num2) {
+                    var result = num1 / num2;
+                    return result;
+                }
+                document.write("첫 번째 값은 : 10, 두번째 값은: 20", "<br/>");
+                var value = a(10, 20);
+                document.write("합계(10+20) = ", value, "<br/>");
+                var value = b(10, 20);
+                document.write("뺄셈(10-20) = ", value, "<br/>");
+                var value = c(10, 20);
+                document.write("곱셈(10*20) = ", value, "<br/>");
+                var value = d(10, 20);
+                document.write("나누기(10/20) = ", value, "<br/>");
+            </script>
+        </section>
+        <footer><p>&copy; 20XXMade by Korea. All rights reserved.</p></footer>
+    </body>
+</html>
